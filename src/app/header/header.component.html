@@ -1,0 +1,11 @@
+<mat-toolbar [color]="color" layout="row" class="navbar">
+  <div>Project</div>
+  <div style="margin:900px">
+    <span style="padding:4px;cursor: pointer;margin-left:152px">
+      <a [routerLink]="['/todo']" mat-button align="end">AddTodo</a></span>
+    <mat-slide-toggle color="primary"
+    [(ngModel)]="checked" 
+    (click)="fun()">
+   </mat-slide-toggle>
+  </div>
+</mat-toolbar>

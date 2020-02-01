@@ -1,0 +1,9 @@
+<mat-toolbar color="primary" layout="row" class="navbar" disableRipple>
+  <div>Todo Application</div>
+  <div align="end" style="margin:806px">
+    <span style="padding:4px;cursor: pointer;margin-left:152px">
+      <a [routerLink]="['/todo']" mat-button >AddTodo</a></span>
+      <span style="cursor: pointer;margin-left:-13px">
+        <a  mat-button align="end"(click)="logout()">Logout</a></span>  
+  </div>
+</mat-toolbar>

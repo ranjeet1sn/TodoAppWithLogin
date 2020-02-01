@@ -1,0 +1,38 @@
+<app-header></app-header>
+<mat-card [@EnterLeave]="'flyIn'" class="cardStyle">
+    <form #form="ngForm"  (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline" color="primary" >
+        <input matInput placeholder="Enter Title" name="title" #name="ngModel" [(ngModel)]="title" >
+    </mat-form-field><br>
+    <div class="abc" >
+        <button  class="btnStyle" 
+        mat-fab color="primary" 
+        type="submit">
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+    <mat-form-field appearance="outline" color="primary" class="fmfl">
+        <input matInput placeholder="Enter Description"  name="description" #name="ngModel" [(ngModel)]="description" >
+    </mat-form-field>
+</form>
+    <mat-accordion *ngFor="let element of sr.todo,let i=index" [multi]="false">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{element.title}}
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            {{element.description}}
+            <button mat-icon-button (click)="onDelete(element._id)" style="float:right;left: 20px;margin-top: -12px;">
+                <mat-icon>delete</mat-icon>
+            </button>
+            <button mat-icon-button (click)="onEdit(element._id,element)" style="float: right;
+            margin-top: -13px;
+            left: 30px">
+                <mat-icon>edit</mat-icon>
+            </button>
+        </mat-expansion-panel>
+    </mat-accordion>
+</mat-card>

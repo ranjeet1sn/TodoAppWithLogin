@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.style{
+    margin-left: 564px;
+    margin-top: 53px;
+}
+.card-style{
+    width: 200px;
+    margin-left: 564px;
+    margin-top: 26px;
+    padding: 17px;
+}
+.cs{
+    margin-left: 199px; margin-top: -13px
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+}
+.abc{
+    float: right;
+    margin-top:-59px;
+    margin-left: -19px;  
+}
+.btnStyle{
+    height: 69px;
+      width:69px;
+
+}
+.cardStyle{
+    width: fit-content;
+    position:fixed;
+       top:0;
+height: fit-content;
+margin-top: 100px;
+margin-left: 348px;
+background-color: azure;
+}
+.fmfl{
+    margin-top: -29px;  
+}
+.mat-icon:hover{
+    width:50px!important
+}
+#toast-container{
+    margin-right: 724px;
+    margin-top: 308px;
+}
+.divcard{
+    margin-left: 400px;margin-top: 100px;width: 301px;
+}
+input.ng-invalid.ng-touched{
+    border:1px  red
+}
+ .mat-form-field-underline {
+    display: none;
+    }
